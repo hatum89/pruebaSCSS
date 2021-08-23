@@ -4,7 +4,34 @@
       <div class="bottom-nav">
         <div class="case-icon">
           <div class="icon-bg">
-
+             <img class="icon" src="assets/svg/009-apron.svg" alt="">
+             <span class="icon-tittle">
+               Inicio
+             </span>
+          </div>
+        </div>
+        <div class="case-icon" [ngClass]="activeIconData == 1 ? 'active': 'inactive'">
+          <div (click)="activeIcon()" class="icon-bg">
+             <img class="icon" src="assets/svg/008-pliers.svg" alt="">
+             <span class="icon-tittle">
+               Noticias
+             </span>
+          </div>
+        </div>
+        <div class="case-icon">
+          <div class="icon-bg">
+             <img class="icon" src="assets/svg/010-sewing.svg" alt="">
+             <span class="icon-tittle">
+               Buscar
+             </span>
+          </div>
+        </div>
+        <div class="case-icon">
+          <div class="icon-bg">
+             <img class="icon" src="assets/svg/012-brushes.svg" alt="">
+             <span class="icon-tittle">
+               Perfil
+             </span>
           </div>
         </div>
       </div>
