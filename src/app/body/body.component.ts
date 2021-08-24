@@ -7,18 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
   change: boolean;
-  activeIconData: number;
   constructor() { }
 
   ngOnInit(): void {
-    this.activeIconData = 1;
+    this.change = true;
   }
 
   // tslint:disable-next-line:typedef
   activeIcon() {
-    this.activeIconData = 0;
-    setTimeout(() => {
-      this.activeIconData = 1;
-    }, 200);
+    this.change = !this.change;
   }
 }

@@ -1,41 +1,59 @@
-<div class="container">
-  <div class="container-blanco">
-    <div class="container-gradient">
+<div class="content centered-elements">
+  <div class="mobile">
+    <div class="mobile-screen">
+
       <div class="bottom-nav">
-        <div class="case-icon">
-          <div class="icon-bg">
-             <img class="icon" src="assets/svg/009-apron.svg" alt="">
-             <span class="icon-tittle">
-               Inicio
-             </span>
-          </div>
+
+        <div (click)="activeIcon()" class="case-icon" [ngClass]="change? 'active': 'inactive'">
+
+          <div class="icon-bg"></div>
+
+          <img class="icon" src="https://image.flaticon.com/icons/png/512/1946/1946488.png" alt="">
+
+          <span class="icon-title">
+                            Inicio
+                        </span>
+
         </div>
-        <div class="case-icon" [ngClass]="activeIconData == 1 ? 'active': 'inactive'">
-          <div (click)="activeIcon()" class="icon-bg">
-             <img class="icon" src="assets/svg/008-pliers.svg" alt="">
-             <span class="icon-tittle">
-               Noticias
-             </span>
-          </div>
+
+        <div class="case-icon inactive">
+
+          <div class="icon-bg"></div>
+
+          <img class="icon" src="https://image.flaticon.com/icons/png/512/2983/2983803.png" alt="">
+
+          <span class="icon-title">
+                            Noticias
+                        </span>
+
         </div>
-        <div class="case-icon">
-          <div class="icon-bg">
-             <img class="icon" src="assets/svg/010-sewing.svg" alt="">
-             <span class="icon-tittle">
-               Buscar
-             </span>
-          </div>
+
+        <div class="case-icon inactive">
+
+          <div class="icon-bg"></div>
+
+          <img class="icon" src="https://image.flaticon.com/icons/png/512/709/709592.png" alt="">
+
+          <span class="icon-title">
+                            Buscar
+                        </span>
+
         </div>
-        <div class="case-icon">
-          <div class="icon-bg">
-             <img class="icon" src="assets/svg/012-brushes.svg" alt="">
-             <span class="icon-tittle">
-               Perfil
-             </span>
-          </div>
+
+        <div class="case-icon inactive">
+
+          <div class="icon-bg"></div>
+
+          <img class="icon" src="https://image.flaticon.com/icons/png/512/456/456283.png" alt="">
+
+          <span class="icon-title">
+                            Mi perfil
+                        </span>
+
         </div>
+
       </div>
+
     </div>
   </div>
 </div>
-
